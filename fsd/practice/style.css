@@ -1,0 +1,24 @@
+ul{
+    font-size: larger;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#table1{
+    background-color: cyan;
+}
+#form2{
+    background-color: cyan;
+}
+.heading{
+    background-color: aqua;
+    text-align: center;
+}
+body{
+    background-image: url(workplace.jpg);
+    background-repeat: no-repeat;
+    background-size: 5cm;
+    
+}
+
+img{
+    margin-top: 10cm;
+}

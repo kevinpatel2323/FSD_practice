@@ -1,0 +1,358 @@
+body{
+    color: white;
+    background-color: black;
+}
+
+.heading{
+    background-color: rgb(255, 0, 0);
+    color: black;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0%;
+    opacity: 0.4;
+    flood-opacity: 0.1
+}
+
+.heading:hover{
+    transform: scale(2,2);
+    background-color: rgb(255, 0, 0);
+}
+
+.even_r{
+    background-color;
+    color: white;
+}
+
+.odd_r{
+    background-color: greenyellow;
+}
+table{
+    /* position: fixed; */
+    background-color: black;
+    margin: auto;
+}
+
+.p1{
+    border-style: dotted;
+    
+}
+.p2{
+    border-style:dashed;
+}
+.p3{
+    border-style:dotted dashed;
+}
+.p4{
+    border-style:double;
+}
+.p5{
+    border-style:solid;
+}
+.p6{
+    border-style:dotted dashed double solid;
+    border-color:blue;
+    border: 5px;
+    position: static;
+}
+
+.a1:link{
+    color: black;
+    
+}
+.a1:visited{
+    color: blue; 
+}
+.a1:hover{
+    color: yellowgreen;
+}
+.a1:active{
+    color: red;
+}
+
+.a2:link{
+    color: white;
+}
+.a2:visited{
+    color: blue; 
+}
+.a2:hover{
+    color: greenyellow;
+}
+.a2:active{
+    color: red;
+}
+
+.ol1:hover{
+    color: blue;
+}
+
+
+.ol1 li::marker{
+    color: yellowgreen;
+
+}
+.p6::first-line{
+    color: greenyellow;
+}
+.p6::first-letter{
+    background-color:rgb(175, 62, 62) ;
+}
+.p6::selection{
+    background-color: rgb(165, 72, 72);
+    color: blue;
+}
+
+.p1{
+    margin: auto;
+    width: 50%;
+}
+.p2{
+    margin: 10px;
+    padding: 50px 50px;
+    
+}
+.p4{
+    margin: 15px 20px 50px 70px;
+    top: 10px;
+}
+    
+.image{
+    /* float: left; */
+    
+    float: left;
+    max-width: auto;
+    max-height: auto;
+    
+}
+
+/* .image:hover{
+    transform: scale(1.5,1.5)
+    
+} */
+/* .image:hover{
+    
+    transform: rotate(30deg)
+} */
+.image:hover{
+    transform: rotate(180deg)
+}
+/* @media only screen and (max-width:500px) {
+    body{
+        color: rgb(0, 0, 0);
+        background-color: aliceblue;
+    }
+} */
+
+/* @media only screen and (orientation : landscape) {
+    body{
+        color: rgb(0, 0, 0);
+        background-color: aliceblue;
+    }
+} */
+
+@media only print {
+    body{
+        color: rgb(0, 0, 0);
+        background-color: orange;
+    }
+}
+
+article{
+    /* background-image: linear-gradient(90deg,blue,red,orange,blue,green,red); */
+}
+article:hover{
+    background-image: linear-gradient(90deg,blue,red,orange,blue,green,red);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* article{
+    background-image: radial-gradient(blue,red,orange,blue,green,red);
+} */
+
+.circle1{
+    color: blue;
+    border-radius: 50%;
+    height: 5cm;
+    width: 5cm;
+    background-image: conic-gradient(blue 0deg,blue 90deg,red 0deg,red 180deg,orange 0deg,orange 270deg,green 0deg,green 360deg);
+}
+
+.circle2{
+    color: blue;
+    border-radius: 50%;
+    height: 5cm;
+    width: 5cm;
+    background-image: conic-gradient(blue 0deg,blue 150deg,red 0deg,red 180deg,orange 0deg,orange 270deg,green 0deg,green 360deg);
+}
+.circle3{
+    color: blue;
+    border-radius: 50%;
+    height: 5cm;
+    width: 5cm;
+    background-image: conic-gradient(blue 90deg,red 180deg,orange 270deg,green 360deg);
+}
+
+.circle4{
+    color: blue;
+    border-radius: 50%;
+    height: 5cm;
+    width: 5cm;
+    background-image: conic-gradient(blue 90deg,red 180deg,orange 270deg,green 360deg);
+}
+
+.circle5{
+    color: blue;
+    border-radius: 50%;
+    height: 5cm;
+    width: 5cm;
+    background-image: conic-gradient(from 90deg,red,blue);
+    background-size: 20px;
+    transition: border 2s;
+    /* transition-delay: 2s; */
+}
+
+.circle5:hover{
+    border: 10px solid white;
+}
+
+
+form:hover{
+    background-color: aqua;
+    color: black;
+    border-radius: 16px;
+
+}
+input
+{
+width:10%;
+height:10%;
+transition:height 4s,width 4s;
+transition-delay:2s;
+}
+input:hover
+{
+height:30%;
+width:30%;
+background-color: black;
+color: aqua;
+border-radius: 10px;
+}
+
+.anime{
+    animation-name: one;
+    width: 5cm;
+    height: 5cm;
+    /* border: 5px solid red; */
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes one{
+    from{width: 5cm} 
+    to{width: 10cm}
+
+}
+
+.anime2{
+    animation-name: two;
+    width: 3cm;
+    height: 3cm;
+    background-color: blue;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+@keyframes two{
+    /* 0%{
+        background-color: cyan;
+    } */
+    /* 25%{
+        background-color: rgb(6, 245, 125);
+    } */
+    50%{
+        
+        background-color: rgb(255, 0, 0);
+    }
+    /* 75%{
+        background-color: rgb(248, 8, 8);
+    } */
+    
+}
+
+.anime3{
+    animation-name: three;
+    width: 3cm;
+    height: 3cm;
+    background-color: rgb(255, 0, 0);
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+@keyframes three{
+    /* 0%{
+        background-color: cyan;
+    } */
+    /* 25%{
+        background-color: rgb(6, 245, 125);
+    } */
+    50%{
+        background-color: blue;
+    }
+    /* 75%{
+        background-color: rgb(248, 8, 8);
+    } */
+    
+}
+
+.anime4{
+    animation-name: five;
+    width: 3cm;
+    height: 3cm;
+    background-color: rgb(255, 0, 0);
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+@keyframes four{
+    0%{
+        background-color: cyan;
+    }
+    25%{
+        background-color: rgb(6, 245, 125);
+    }
+    50%{
+        background-color: blue;
+    }
+    75%{
+        background-color: rgb(248, 8, 8);
+    }
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+  color: rgb(255, 255, 255);
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.cen{
+    text-align: center;
+}
